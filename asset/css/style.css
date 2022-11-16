@@ -230,6 +230,24 @@ grid-area: card3;
 .card{
     border: none;
     border-radius: none;
+    position: relative;
+}
+
+.card a.card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.card a.card-link:hover{
+    background-color: #8a6cba;
+    opacity: 0.15;
+}
+
+.card:hover{
+    background-color: #e0dbe9;
 }
 
 .card-img{
@@ -258,7 +276,7 @@ grid-area: card3;
 
 
 .add-card a:hover{
-    color: #8a6cba;
+    color: #8362ba;
     text-decoration: none;
 }  
 
@@ -269,6 +287,10 @@ grid-area: card3;
 
 .card-body h6{
     margin-bottom: 4px;
+}
+
+.card-body h6:hover{
+    color: #8a6cba;
 }
 
 .card-body i{
@@ -326,21 +348,12 @@ strong{
     text-align: center;
 }
 
-/* .banner4-title hr{
-    background-color: rgb(66, 66, 66);
-    width: 80px;
-} */
-
-/* .banner4-card{
-    width: 70%;
-    margin: 0 auto;
-} */
-
 .banner4-row{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 78px;
+    
     /* margin-right: -15px;
     margin-left: -15px; */
 }
@@ -352,6 +365,24 @@ strong{
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
+    
+}
+
+.banner4-card{
+    position: relative;
+}
+
+.banner4-card a.banner4-col-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.banner4-card a:hover{
+    background-color: #8a6cba;
+    opacity: 0.15;
 }
 
 .banner4-col:first-child{
@@ -360,6 +391,10 @@ strong{
 
 .banner4-col:last-child{
     padding-right: 0;
+}
+
+.banner4-card-img:hover{
+    background-color: #8a6cba;
 }
 
 .banner4-card-body{
@@ -391,6 +426,22 @@ strong{
     padding-top: 17px;
 }
 
+.slick-dots li button:before {
+    font-size: 15px;
+    line-height: 20px;
+    top: 15px;
+    color: #8a6cba;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #8a6cba;
+}
+
+
+.slick-slide{
+    width: 387px;
+}
 /* ------------FOOTER--------------------------------------------------------------------------------------- */
 
 footer{
