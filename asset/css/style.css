@@ -177,7 +177,9 @@ grid-area: card3;
     color: #ffffff;
     text-decoration: none;
 }  
-
+.banner1-text a:hover {
+    background-color: #000;
+}
 .banner3{
     position: relative;
     
@@ -198,7 +200,10 @@ grid-area: card3;
     color: #ffffff;
     text-decoration: none;
 }
-
+.banner3-text a:hover {
+    background-color: #000;
+    border-color: #000;
+}
 
 /* --------------CONTENT-------------------------------------------------------------------------------------------------------- */
 
@@ -246,27 +251,30 @@ grid-area: card3;
     opacity: 0.15;
 }
 
-.card:hover{
-    background-color: #e0dbe9;
-}
-
 .card-img{
     position: relative; 
+    overflow: hidden;
 }
 
 .add-card{
     position: absolute;
     left: 5px;
-    bottom: 5px;
+    bottom: -15px;
     font-size: 12px;
     font-family: "Montserrat";
     color: rgb(66, 66, 66);
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
 }
-
+.card:hover .add-card {
+    opacity: 1;
+    visibility: visible;
+    bottom: 5px;
+}
 .add-card a{
     color: rgb(66, 66, 66);
     border: 1px solid rgb(66, 66, 66);
@@ -655,7 +663,15 @@ footer{
         font-size: 12px;
     }
 }
-
+@media(max-width:991px) {
+    .banner {
+        display: block;
+    }
+    .banner3 img,
+    .banner2 img  {
+        width: 100%;
+    }
+}
 @media (min-width:568px) and (max-width:768px) {
 
     .top-menu{
